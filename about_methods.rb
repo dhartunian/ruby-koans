@@ -41,7 +41,7 @@ class AboutMethods < Neo::Koan
     exception = assert_raise(ArgumentError) do
       my_global_method(1,2,3)
     end
-    assert_match(/given 3, expected 2/, exception.message)
+    assert_match(/3 for 2/, exception.message)
   end
 
   # ------------------------------------------------------------------
